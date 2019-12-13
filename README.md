@@ -8,8 +8,8 @@ evententually, will write something here
 To Run
 ------
 
-cd ./backend
-uvicorn main:app --reload
+1.  cd ./backend
+2. uvicorn main:app --reload
 
-cd ./frontend
-npm run dev
+1. cd ./frontend
+2. npm run dev
