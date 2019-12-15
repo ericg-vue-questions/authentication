@@ -33,6 +33,7 @@ async def login( username: str, password: str, response: Response ):
     if username in users:
         if users[ username ][ 'password' ] == password:
             authenticated = True
-            response.set_cookie( key="user", value=str( users[ username ][ 'id' ] ), max_age = 60 * 60 * 24 )
+            response.set_cookie( key="user", value=str( users[ username ][ 'id' ] ), max_age = 60 * 60 * 24, path = "/" )
+
 
     return authenticated
